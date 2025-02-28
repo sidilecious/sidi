@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daystar Product Selling Platform</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+
+    <nav>
+        <ul id="nav-links">
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('product')">Product</a></li>
+            <li><a href="#" onclick="showSection('premium')">Premium</a></li>
+            <li><a href="#" onclick="showSection('about')">About Us</a></li> 
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+             <li><a href="#" onclick="showSection('admin')">Admin</a></li>
+           
+        </ul>
+    </nav>
+
+    <!-- Title Bar -->
+    <header>
+        <h1 id="pageTitle">Daystar Product Selling Platform</h1>
+    </header>
+
+    <!-- Sections -->
+    <section id="home" class="section">
+        <p>Our mission is to destroy any thought of doubt. When people can't lift you, God can in many ways!</p>
+    </section>
+
+    <section id="product" class="section">
+        <section id="product">
+    <h1>Victor baraka </h1>
+    <p>Explore our wide range of products.</p>
+    
+    <!-- Search Bar and Category Filter -->
+    
+        <div class="search-container">
+    <input type="text" id="searchBar" placeholder="Search for products..." onkeyup="searchProducts()">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</div>
+
+        <select id="categoryFilter" onchange="filterProducts()">
+            <option value="all">All Categories</option>
+            <option value="t-shirts">T-Shirts</option>
+            <option value="jerseys">Jerseys</option>
+            <option value="food">Food</option>
+            <option value="clothing">Clothing & Fashion</option>
+            <option value="electronics">Electronics & Accessories</option>
+            <option value="bags">Bags & Accessories</option>
+            <option value="stationery">Stationery & Study Essentials</option>
+            <option value="room_essentials">Room & Lifestyle Essentials</option>
+            <option value="fitness">Fitness & Sports Gear</option>
+            <option value="personal_care">Personal Care & Grooming</option>
+            <option value="entertainment">Entertainment & Fun</option>
+        </select>
+        
+        <div id="productList" class="grid-container">
+            <!-- Sample Product Grid -->
+            <div class="product" data-category="t-shirts">
+                <img src="tshirt.jpg" alt="T-Shirt">
+                <h2>Classic T-Shirt</h2>
+                <p>Comfortable cotton t-shirt available in all sizes.</p>
+                <span>100 KSH</span>
+                <button onclick="addToCart('Classic T-Shirt', 100)">Add to Cart</button>
+            </div>
+            <div class="product" data-category="t-shirts">
+                <img src="tshirt.jpg" alt="T-Shirt">
+                <h2>Classic T-Shirt</h2>
+                <p>Comfortable cotton t-shirt available in all sizes.</p>
+                <span>100 KSH</span>
+                <button onclick="addToCart('Classic T-Shirt', 100)">Add to Cart</button>
+        </div>
+        
+        
+        
+        
+        
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="about" class="section">
+        <p>We strive to inspire and uplift everyone.</p>
+    </section>
+
+    <section id="contact" class="section">
+        <p>Email: sidievaton@gmail.com</p>
+        <p>contact ☎️: +254 742876491</p>
+    </section>
+
+    <section id="premium" class="section">
+        <p>Exclusive deals for premium members.</p>
+    </section>
+    <section id="admin" class="section">
+        <p>welcome admin please sign in to your account.</p>
+    </section>
+
+    
+    
+    
+
+    <div id="welcomePopup" class="popup">
+        <div class="popup-content">
+            <h2>Welcome to Daystar Product Palace</h2>
+            <p>We are here to provide the best products and services.</p>
+            <button id="closePopupBtn">OK</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Product Deal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
